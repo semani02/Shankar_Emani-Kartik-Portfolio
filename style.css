@@ -26,6 +26,15 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.job {
+    margin-bottom: 20px;
+}
+
+.date {
+    font-weight: normal;
+    font-style: italic;
+}
+
 footer {
     background-color: #333;
     color: white;
