@@ -4,26 +4,48 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #eef2f5;
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #4caf50, #2196f3);
     color: white;
     text-align: center;
     padding: 20px;
 }
 
+.contact-info a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 h1 {
     margin: 0;
+    font-size: 2.2em;
 }
 
 section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #ffffff;
+    border-left: 5px solid #2196f3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+section:nth-child(even) {
+    background-color: #f1f9ff;
+}
+
+section h2 {
+    cursor: pointer;
+    margin-top: 0;
+    color: #2196f3;
+}
+
+section.collapsed > *:not(h2) {
+    display: none;
 }
 
 .job {
@@ -40,7 +62,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }

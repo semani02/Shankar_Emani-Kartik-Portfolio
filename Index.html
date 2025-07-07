@@ -9,7 +9,11 @@
 <body>
     <header>
         <h1>Shankar Emani (Kartik)</h1>
-        <p>Business Analyst</p>
+        <p class="contact-info">
+            +1 (123) 456-7890 |
+            <a href="mailto:Shankar.kartikemani@gmail.com">Shankar.kartikemani@gmail.com</a> |
+            <a href="https://www.linkedin.com/in/shankar-emani">LinkedIn</a>
+        </p>
     </header>
     <section id="summary">
         <h2>Summary</h2>
@@ -97,5 +101,12 @@
         <p>Contact: <a href="mailto:Shankar.kartikemani@gmail.com">Shankar.kartikemani@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/semani02/Shankar_Emani-Kartik-Portfolio.git">Shankar's GitHub</a></p>
     </footer>
+    <script>
+        document.querySelectorAll('section h2').forEach(function(h) {
+            h.addEventListener('click', function() {
+                h.parentElement.classList.toggle('collapsed');
+            });
+        });
+    </script>
 </body>
 </html>
